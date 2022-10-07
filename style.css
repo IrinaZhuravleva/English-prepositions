@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+}
+button {
+  border: none;
+  outline: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  min-height: 400px;
+ 
+  padding-left: 15px;
+  padding-right: 15px;
+
+  position: relative;
+}
+
+h2 {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000;
+  font-weight: 500;
+  font-family: PTSans, Arial, sans-serif;
+}
+h3 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 500;
+  font-family: PTSans, Arial, sans-serif;
+}
+
+.question, 
+button, 
+.nextButton,
+.number,
+.reload-btn {
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.nextButton:hover {
+  transition: all .25s ease-in;
+  color: #000;
+  background-color: #fff;
+}
+
+.nextButton {
+  text-transform: uppercase;
+}
+
+.question {
+  display: block;
+  /* max-width: 800px; */
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  /* vertical-align: middle; */
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.answers {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+
+button {
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+
+.nextButton {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  /* margin-top: 80px; */
+  margin-right: 0;
+  margin-left: auto;
+  /* margin-left: 1100px; */
+}
+.reload-btn {
+  border: 2px solid transparent;
+  background-image: url('reload.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  background-color: #fff;
+  color: transparent;
+  background-size: 25%;
+  transition: all .25s ease-in;
+}
+
+.reload-btn:hover {
+  cursor: pointer;
+  transition: all .25s ease-in;
+  background-color: #fff;
+  background-image: none;
+  /* color: #000; */
+  color: lightslategray;
+}
+
+.checking {
+  width: calc(100% - 30px);
+  border-radius: 10px;
+  padding: 5px 20px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 80px;
+  left: 15px;
+}
+
+.checking-incorrect {
+  background-color: lightpink;
+}
+.checking-correct {
+  background-color: lightgreen;
+}
+
+.expression-number {
+  text-align: right;
+}
+
+.hidden {
+  display: none;
+}
